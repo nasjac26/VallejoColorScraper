@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "0gdlJxDa0Vx9fgCit6rHWWsmC31aPb5QtBOmOmsWgwsZOe8Ci3rwQffWXdbtfObpm8SWaJnCms+EcFgOYXH2Ow==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jacob\\Documents\\practice-coding\\projects\\VallejoColorApp\\paintScrape\\paintScrape.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jacob\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
+    "C:\\Users\\Jacob\\.nuget\\packages\\fizzler\\1.2.0\\fizzler.1.2.0.nupkg.sha512",
+    "C:\\Users\\Jacob\\.nuget\\packages\\fizzler.systems.htmlagilitypack\\1.2.1\\fizzler.systems.htmlagilitypack.1.2.1.nupkg.sha512",
+    "C:\\Users\\Jacob\\.nuget\\packages\\htmlagilitypack\\1.11.57\\htmlagilitypack.1.11.57.nupkg.sha512"
+  ],
+  "logs": []
+}
