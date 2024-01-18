@@ -12,9 +12,9 @@ namespace VallejoColorScraper
     {
         public class Row
         {
-            public string Name { get; set; }
-/*            public string ReferenceNum { get; set; }
-*/        }
+            /*public string Name { get; set; }
+            public string ReferenceNum { get; set; }*/
+        }
         static void Main(string[] args)
         {
             var html = @"https://acrylicosvallejo.com/en/category/hobby/game-color-en/";
@@ -25,13 +25,16 @@ namespace VallejoColorScraper
             var paintNamesNodeList = htmlDoc.DocumentNode.QuerySelectorAll("h2[class='woocommerce-loop-product__title']");
             var paintReferencesNodeList = htmlDoc.DocumentNode.QuerySelectorAll("div[class='referencia']");
 
-            string[] p
-            foreach (var paintName in paintNames)
+            string[,] paintInfo = { { "foo", "bar" } };
+
+            foreach (var paintName in paintNamesNodeList)
                 {
                     Console.WriteLine(paintName.InnerText);
-                }
+                    Console.WriteLine(paintInfo[0,0]);
+                    Console.WriteLine(paintInfo[0,1]);
+            }
 
-            foreach (var paintReference in paintReferences)
+            foreach (var paintReference in paintReferencesNodeList)
             {
                 Console.WriteLine(paintReference.InnerText);
             }
