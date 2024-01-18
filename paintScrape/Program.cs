@@ -9,10 +9,11 @@ using System.Globalization;
 namespace VallejoColorScraper
 {
     class Program
-    {   
+    {
         public class Row
         {
-/*            public string Title { get; set; }
+            public string Name { get; set; }
+/*            public string ReferenceNum { get; set; }
 */        }
         static void Main(string[] args)
         {
@@ -21,9 +22,19 @@ namespace VallejoColorScraper
             HtmlWeb web = new HtmlWeb();
             //targeting first paint color element name
             var htmlDoc = web.Load(html);
-            var node = htmlDoc.DocumentNode.QuerySelector("h2[class='woocommerce-loop-product__title']");
+            var paintNamesNodeList = htmlDoc.DocumentNode.QuerySelectorAll("h2[class='woocommerce-loop-product__title']");
+            var paintReferencesNodeList = htmlDoc.DocumentNode.QuerySelectorAll("div[class='referencia']");
 
-            Console.WriteLine(node.InnerText);
+            string[] p
+            foreach (var paintName in paintNames)
+                {
+                    Console.WriteLine(paintName.InnerText);
+                }
+
+            foreach (var paintReference in paintReferences)
+            {
+                Console.WriteLine(paintReference.InnerText);
+            }
         }
     }
 
