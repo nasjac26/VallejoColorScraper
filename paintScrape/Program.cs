@@ -11,12 +11,6 @@ namespace VallejoColorScraper
 {
     class Program
     {
-        /*public class Row
-        {
-            *//*public string Name { get; set; }
-            public string ReferenceNum { get; set; }*//*
-        }
-
         public class Paint
         {
             public string Name { get; set; }
@@ -27,7 +21,7 @@ namespace VallejoColorScraper
                 Name = name;
                 Reference = reference;
             }
-        }*/
+        }
 
         static void Main(string[] args)
         {
